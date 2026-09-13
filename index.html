@@ -5,78 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>متجر بيتك - Beytek</title>
     <style>
-        body { font-family: Tahoma, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; text-align: center; }
-        h1 { color: #222; margin-bottom: 5px; }
-        .subtitle { color: #666; margin-bottom: 30px; font-size: 15px; }
-        .products-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1100px; margin: 0 auto; }
-        .product-card { background: #fff; border: 1px solid #e1e4e8; border-radius: 10px; width: 260px; padding: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: right; display: flex; flex-direction: column; justify-content: space-between; }
-        .product-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 6px; }
+        body { font-family: Tahoma, sans-serif; background-color: #f4f6f9; margin: 0; padding: 15px; text-align: center; }
+        h1 { color: #222; margin-bottom: 5px; font-size: 22px; }
+        .subtitle { color: #666; margin-bottom: 20px; font-size: 13px; }
+        .products-container { display: flex; flex-direction: column; align-items: center; gap: 15px; max-width: 500px; margin: 0 auto; }
+        .product-card { background: #fff; border: 1px solid #e1e4e8; border-radius: 10px; width: 100%; padding: 15px; box-sizing: border-box; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: right; }
+        .product-card img { width: 100%; height: 220px; object-fit: cover; border-radius: 6px; background-color: #eee; }
         .product-card h3 { font-size: 16px; margin: 12px 0 6px 0; color: #333; }
-        .category { font-size: 13px; color: #007bff; font-weight: bold; background: #eef5ff; padding: 4px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px; }
+        .category { font-size: 12px; color: #007bff; font-weight: bold; background: #eef5ff; padding: 3px 6px; border-radius: 4px; display: inline-block; margin-bottom: 6px; }
         .price-box { display: flex; justify-content: space-between; align-items: center; margin: 10px 0; }
-        .price { font-size: 17px; color: #28a745; font-weight: bold; }
-        .profit-tag { font-size: 11px; color: #fff; background: #e67e22; padding: 4px 8px; border-radius: 4px; font-weight: bold; }
-        .desc { font-size: 13px; color: #666; margin-bottom: 15px; line-height: 1.4; }
-        .buy-btn { display: block; background: #25d366; color: white; text-decoration: none; padding: 10px; text-align: center; border-radius: 6px; font-weight: bold; font-size: 14px; transition: background 0.2s; }
-        .buy-btn:hover { background: #1ebe5d; }
+        .price { font-size: 16px; color: #28a745; font-weight: bold; }
+        .profit-tag { font-size: 10px; color: #fff; background: #e67e22; padding: 3px 6px; border-radius: 4px; font-weight: bold; }
+        .desc { font-size: 12px; color: #666; margin-bottom: 12px; line-height: 1.4; }
+        .buy-btn { display: block; background: #25d366; color: white; text-decoration: none; padding: 10px; text-align: center; border-radius: 6px; font-weight: bold; font-size: 14px; }
     </style>
 </head>
 <body>
 
-    <h1>متجر بيتك - Beytek</h1>
-    <p class="subtitle">أقوى المنتجات الأصلية - مكسب صافي 50% والدفع عند الاستلام</p>
+    <h1>متجر بيتك</h1>
+    <p class="subtitle">أقوى المنتجات - مكسب صافي 50% والدفع عند الاستلام</p>
 
     <div class="products-container">
         
         <!-- منتج 1 -->
         <div class="product-card">
-            <div>
-                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400" alt="منظم مطبخ دوار">
-                <span class="category">القسم: أدوات منزلية ومطابخ</span>
-                <h3>منظم مطبخ دوار متعدد الطبقات</h3>
-                <p class="desc">منتج أصلي عالي الطلب لتنظيم المطبخ وتوفير المساحات بسهولة تامة.</p>
+            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=500&auto=format&fit=crop&q=60" alt="منظم مطبخ">
+            <span class="category">أدوات منزلية</span>
+            <h3>منظم مطبخ دوار متعدد الطبقات</h3>
+            <p class="desc">منتج أصلي عالي الطلب لتنظيم المطبخ وتوفير المساحات بسهولة.</p>
+            <div class="price-box">
+                <span class="price">240 ج.م</span>
+                <span class="profit-tag">ربحك 120 ج.م (50%)</span>
             </div>
-            <div>
-                <div class="price-box">
-                    <span class="price">240 ج.م</span>
-                    <span class="profit-tag">ربحك الصافي 120 ج.م (50%)</span>
-                </div>
-                <a href="https://wa.me/201281075646?text=أريد%20شراء%20(منظم%20مطبخ%20دوار)%20بسعر%20240%20ج.م" target="_blank" class="buy-btn">شراء الآن عبر الواتساب</a>
-            </div>
+            <a href="https://wa.me/201281075646?text=أريد%20شراء%20(منظم%20مطبخ%20دوار)%20بسعر%20240%20ج.م" target="_blank" class="buy-btn">شراء الآن عبر الواتساب</a>
         </div>
 
         <!-- منتج 2 -->
         <div class="product-card">
-            <div>
-                <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400" alt="حامل لابتوب مكتبي">
-                <span class="category">القسم: إلكترونيات وتكنولوجيا</span>
-                <h3>حامل لابتوب قابل للطي وتعديل الارتفاع</h3>
-                <p class="desc">مصنوع من الألومنيوم المتين، مريح للعمل ويحمي الأجهزة من السخونة.</p>
+            <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=500&auto=format&fit=crop&q=60" alt="حامل لابتوب">
+            <span class="category">إلكترونيات</span>
+            <h3>حامل لابتوب قابل للطي وتعديل الارتفاع</h3>
+            <p class="desc">مصنوع من الألومنيوم المتين, مريح للعمل ويحمي الأجهزة.</p>
+            <div class="price-box">
+                <span class="price">300 ج.م</span>
+                <span class="profit-tag">ربحك 150 ج.م (50%)</span>
             </div>
-            <div>
-                <div class="price-box">
-                    <span class="price">300 ج.م</span>
-                    <span class="profit-tag">ربحك الصافي 150 ج.م (50%)</span>
-                </div>
-                <a href="https://wa.me/201281075646?text=أريد%20شراء%20(حامل%20لابتوب%20قابل%20للطي)%20بسعر%20300%20ج.م" target="_blank" class="buy-btn">شراء الآن عبر الواتساب</a>
-            </div>
+            <a href="https://wa.me/201281075646?text=أريد%20شراء%20(حامل%20لابتوب)%20بسعر%20300%20ج.م" target="_blank" class="buy-btn">شراء الآن عبر الواتساب</a>
         </div>
 
         <!-- منتج 3 -->
         <div class="product-card">
-            <div>
-                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400" alt="جهاز تنظيف البشرة">
-                <span class="category">القسم: عناية شخصية وجمال</span>
-                <h3>جهاز تنظيف وإزالة الرؤوس السوداء</h3>
-                <p class="desc">تقنية حديثة لتقشير البشرة وتنعيمها وإزالة الدهون بأمان تام في البيت.</p>
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&auto=format&fit=crop&q=60" alt="جهاز تنظيف البشرة">
+            <span class="category">عناية شخصية</span>
+            <h3>جهاز تنظيف وإزالة الرؤوس السوداء</h3>
+            <p class="desc">تقنية حديثة لتقشير البشرة وتنعيمها بأمان تام في البيت.</p>
+            <div class="price-box">
+                <span class="price">195 ج.م</span>
+                <span class="profit-tag">ربحك ~100 ج.م (50%)</span>
             </div>
-            <div>
-                <div class="price-box">
-                    <span class="price">195 ج.م</span>
-                    <span class="profit-tag">ربحك الصافي ~100 ج.م (50%)</span>
-                </div>
-                <a href="https://wa.me/201281075646?text=أريد%20شراء%20(جهاز%20تنظيف%20البشرة)%20بسعر%20195%20ج.م" target="_blank" class="buy-btn">شراء الآن عبر الواتساب</a>
-            </div>
+            <a href="https://wa.me/201281075646?text=أريد%20شراء%20(جهاز%20تنظيف%20البشرة)%20بسعر%20195%20ج.م" target="_blank" class="buy-btn">شراء الآن عبر الواتساب</a>
         </div>
 
     </div>
