@@ -10,7 +10,12 @@
         .subtitle { color: #666; margin-bottom: 20px; font-size: 13px; }
         .products-container { display: flex; flex-direction: column; align-items: center; gap: 15px; max-width: 500px; margin: 0 auto; }
         .product-card { background: #fff; border: 1px solid #e1e4e8; border-radius: 10px; width: 100%; padding: 15px; box-sizing: border-box; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: right; }
-        .product-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 6px; background-color: #eee; }
+        .product-badge { width: 100%; height: 180px; border-radius: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; font-weight: bold; text-align: center; margin-bottom: 12px; }
+        .badge-1 { background: linear-gradient(135deg, #1abc9c, #16a085); }
+        .badge-2 { background: linear-gradient(135deg, #3498db, #2980b9); }
+        .badge-3 { background: linear-gradient(135deg, #e67e22, #d35400); }
+        .badge-icon { font-size: 36px; margin-bottom: 8px; }
+        .badge-title { font-size: 18px; padding: 0 10px; }
         .product-card h3 { font-size: 16px; margin: 12px 0 6px 0; color: #333; }
         .category { font-size: 12px; color: #007bff; font-weight: bold; background: #eef5ff; padding: 3px 6px; border-radius: 4px; display: inline-block; margin-bottom: 6px; }
         .price-box { display: flex; justify-content: space-between; align-items: center; margin: 10px 0; }
@@ -29,7 +34,10 @@
         
         <!-- منتج 1 -->
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=500&auto=format&fit=crop&q=60" alt="منظم مطبخ">
+            <div class="product-badge badge-1">
+                <div class="badge-icon">🧺</div>
+                <div class="badge-title">منظم مطبخ دوار</div>
+            </div>
             <span class="category">أدوات منزلية</span>
             <h3>منظم مطبخ دوار متعدد الطبقات</h3>
             <p class="desc">منتج أصلي عالي الطلب لتنظيم المطبخ وتوفير المساحات بسهولة.</p>
@@ -42,7 +50,10 @@
 
         <!-- منتج 2 -->
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&auto=format&fit=crop&q=60" alt="حامل لابتوب">
+            <div class="product-badge badge-2">
+                <div class="badge-icon">💻</div>
+                <div class="badge-title">حامل لابتوب قابل للطي</div>
+            </div>
             <span class="category">إلكترونيات</span>
             <h3>حامل لابتوب قابل للطي وتعديل الارتفاع</h3>
             <p class="desc">مصنوع من الألومنيوم المتين, مريح للعمل ويحمي الأجهزة.</p>
@@ -55,7 +66,10 @@
 
         <!-- منتج 3 -->
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&auto=format&fit=crop&q=60" alt="جهاز تنظيف البشرة">
+            <div class="product-badge badge-3">
+                <div class="badge-icon">✨</div>
+                <div class="badge-title">جهاز تنظيف البشرة</div>
+            </div>
             <span class="category">عناية شخصية</span>
             <h3>جهاز تنظيف وإزالة الرؤوس السوداء</h3>
             <p class="desc">تقنية حديثة لتقشير البشرة وتنعيمها بأمان تام في البيت.</p>
